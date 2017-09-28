@@ -77,7 +77,7 @@ function removeFromCart(item) {
         cart[i].unshift()
       }
   }
-  return cart
+  return cart.unshit()
 }
 
 function placeOrder(cardNumber) {
