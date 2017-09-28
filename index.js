@@ -75,7 +75,7 @@ function removeFromCart(item) {
     var itemKey = Object.keys(cart[i])[0]
     var itemValue = cart[i][itemKey]
       if (itemKey.hasOwnProperty(`${item}`)){
-        itemKey = 'fire'
+        cart[i] = {fruit: `fire`}
       }
   }
   return cart
