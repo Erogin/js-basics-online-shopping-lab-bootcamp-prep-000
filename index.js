@@ -75,11 +75,11 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++){
     var itemKey = Object.keys(cart[i])[0]
     var itemValue = cart[i][itemKey]
-      if (itemKey = itemName){
+      if (itemKey.hasOwnProperty(itemName)){
         delete cart[i]
-      return cart
       }
   }
+  return cart
 }
 
 function placeOrder(cardNumber) {
